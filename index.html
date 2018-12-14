@@ -11,13 +11,14 @@
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
 </head>
 
-<body>
+<body background ="images/white.jpg">
+    <center>
     <div class="container ">
-        <h1 id="header">PIG-DICE-GAME!</h1>
+        <h1>PIG-DICE-GAME!</h1>
         <br>
 
-        <div class="container welcome">
-            <h2>BOOK OF RULES</h2>
+        <div class="welcome">
+            <h2>BOOK OF RULES</h2><br><br>
             <p class="list">On each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to hold:</p>
             <div id="list">
                 <ul>
@@ -36,48 +37,52 @@
             <br>
             <br>
 
-            <form id="form">
-                <div class="form-group">
-                    <label>Player 1</label>
-                    <input placeholder="player 1 name" type="text" value="" id="player">
-                </div>
-                <p>
-                    <h1>Against</h1>
-                </p>
-                <div class="form-group">
-                    <label>Player 2</label>
-                    <input placeholder="player 2 name" type="text" value="" id="opponent">
-                </div>
-                <br>
-                <button id="sign" class="btn btn-info">Join Game</button>
-            </form>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>Player1: <span id="player"></span></h1>
-                        <div>
-                            <button id="player" class="roll">Roll</button>
-                            <h3>Dice Roll: <span id="diceRoll"></span></h3>
-                            <h3>Score: <span id="score"></span></h3>
-                        </div>
-                        <div>
-                            <button id="playerPause" class="btn btn-success">Hold</button>
-                            <h3>Total: <span id="total"></span></h3>
-                        </div>
-                    </div> 
-                        <h1>Opponent: <span id="opponentOutput"></span></h1>
-                        <div>
-                            <button id="opponentTurn" class="btn btn-danger">Roll</button>
-                            <h3>Dice Roll: <span id="diceRoll2"></span></h3>
-                            <h3>Score: <span id="score2"></span></h3>
-<button id="opponentPause" class="btn btn-danger">Hold</button>
-                            <h3>Total: <span id="total2"></span></h3>
-         
-            </div>
-            <button id="restart" class="restart">Restart</button>
-            <button id="newGame" class="new">New Game</button>
-            <script src="js/jquery-3.3.1.js"></script>
-            <script src="js/script.js"></script>
+<form id="form">
+    <div class="form-group">
+        <label>Player 1</label>
+        <input placeholder="player 1 name" type="text" value="" id="player">
+    </div>
+    <p>
+        <h1>Against</h1>
+    </p>
+    <div class="form-group">
+        <label>Player 2</label>
+        <input placeholder="player 2 name" type="text" value="" id="opponent">
+    </div>
+    <br>
+    <button id="sign" class="btn btn-info">Join Game</button>
+</form>
+<div class="cont">
+    <div class="col-md-6">
+        <h1>Player1: <span id="player"></span></h1>
+        <div>
+            <button id="player" class="btn btn-danger">Roll</button>
+            <h3>Dice Roll: <span id="diceRoll"></span></h3>
+            <h3>Score: <span id="score"></span></h3>
+        </div>
+        <div>
+            <button id="playerPause" class="btn btn-success">Hold</button>
+            <h3>Total: <span id="total"></span></h3>
+<button id="restart" class="btn btn-success">Restart</button>
+        </div>
+</div>
+<h1>Player2: <span id="opponentOutput"></span></h1>
+<div>
+    <button id="opponentTurn" class="btn btn-danger">Roll</button>
+    <h3>Dice Roll: <span id="diceRoll2"></span></h3>
+    <h3>Score: <span id="score2"></span></h3>
+    <button id="opponentPause" class="btn btn-danger">Hold</button>
+    <h3>Total: <span id="total2"></span></h3>
+</div>
+</div>
+</center>
+
+<button id="newGame" class="btn btn-info">New Game</button>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/script.js"></script>
+
+
+
 </body>
 
 </html>

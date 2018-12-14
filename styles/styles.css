@@ -1,8 +1,23 @@
 body{
-    color: aliceblue
-    background-image
-    font-family: 'Rock Salt',
-    cursive;
+    color: black;
+    font-family: 'Rock Salt', cursive;
     font-size: 25px;
-    position: center;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: inherit;
+    height:inherit;
+}
+h1{
+    font-size: 45px;
+    font-weight: 800;
+}
+h2{
+    font-style: italic;
+}
+#restart{
+    float: right;
+}
+#newgame{
+    float: center;
 }
