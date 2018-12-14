@@ -21,3 +21,10 @@ h2{
 #newgame{
     float: left;
 }
+#restart{
+    margin-right: 500px;
+}
+#newgame{
+    margin-left:500px;
+    margin-bottom: 80px; 
+}
