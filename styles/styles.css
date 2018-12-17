@@ -7,6 +7,7 @@ body{
     width: inherit;
     height:inherit;
     color: black;
+    margin-top: 0;
 }
 .jumbotron{
     background-color: black;
@@ -18,7 +19,6 @@ h1{
     border: 10px solid black;
     background-color: black;
     padding: 50px;
-    padding-top: 10px;
     
 }
 h2{
