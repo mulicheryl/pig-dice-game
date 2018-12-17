@@ -11,7 +11,6 @@ function Player(turn) {
  this.totalscore = 0;
  this.turn = turn;
  this.playerName;
- 
 }
 
 Player.prototype.rollone = function () {
@@ -55,7 +54,7 @@ $(document).ready(function () {
   playerOne = new Player(true);
   playerTwo = new Player(false);
   $("#gameSection").show();
-  $("#NameDetails").hide();
+  $("#nameDetails").hide();
   $(".jumbotron").hide();
 
   var playerOne = $(".playerOne").val();
