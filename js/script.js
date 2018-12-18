@@ -87,14 +87,14 @@ $(document).ready(function () {
  $("button#playerOne-roll").click(function (event) {
   playerOne.roll = throwdice();
   $("#dice-roll-1").text(playerOne.roll);
-  playerOne.rollone();
+  playerOne.rollOne();
   $("#round-total-1").text(playerOne.tempscore);
  });
 
  $("button#playerTwo-roll").click(function (event) {
   playerTwo.roll = throwdice();
   $("#dice-roll-2").text(playerTwo.roll);
-  playerTwo.rollone();
+  playerTwo.rollOne();
   $("#round-total-2").text(playerTwo.tempscore);
  });
 
