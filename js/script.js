@@ -11,7 +11,7 @@ function Player(turn) {
  this.totalscore = 0
  this.turn = turn;
  this.playerName;
- 
+
 }
 
 Player.prototype.rollone = function () {
@@ -58,14 +58,14 @@ $(document).ready(function () {
   $("#nameDetails").hide();
   $(".jumbotron").hide();
 
-  var playerOne = $(".playerOne").val();
-  $("#playerOne").text(playerOne);
+  var player_one = $(".playerOne").val();
+  $("#playerOne").text(player_two);
 
-  var playerTwo = $(".playerTwo").val();
-  $("#playerTwo").text(playerTwo);
+  var player_two = $(".playerTwo").val();
+  $("#playerTwo").text(player_two);
 
-  playerOne.playerName = playerOne;
-  playerTwo.playerName = playerTwo;
+  playerOne.playerName = player_one;
+  playerTwo.playerName = player_two;
 
  });
  $("button#newGame").click(function (event) {
@@ -75,7 +75,7 @@ $(document).ready(function () {
   playerTwo.newGame();
   $("#round-total-1").empty();
   $("#total-score-1").empty();
-  $("#die-roll-1").empty();
+  $("#dice-roll-1").empty();
   $("#round-total-2").empty();
   $("#total-score-2").empty();
   $("#die-roll-2").empty();
@@ -87,14 +87,14 @@ $(document).ready(function () {
  $("button#playerOne-roll").click(function (event) {
   playerOne.roll = throwdice();
   $("#dice-roll-1").text(playerOne.roll);
-  playerOne.rollOne();
+  playerOne.rollone();
   $("#round-total-1").text(playerOne.tempscore);
  });
 
  $("button#playerTwo-roll").click(function (event) {
   playerTwo.roll = throwdice();
   $("#dice-roll-2").text(playerTwo.roll);
-  playerTwo.rollOne();
+  playerTwo.rollone();
   $("#round-total-2").text(playerTwo.tempscore);
  });
 
@@ -107,7 +107,7 @@ $(document).ready(function () {
  });
 
  $("button#playerTwo-hold").click(function (event) {
-  playeTwo.hold();
+  playerTwo.hold();
   $("#total-score-2").text(playerTwo.totalscore);
   $("#round-total-2").empty();
   $("#dice-roll-2").empty();
