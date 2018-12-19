@@ -10,7 +10,7 @@ Here is a live [Link](https://mulicheryl.github.io/pig-dice-game/) to project we
 
 # Description
 
-The game is about the randomly rolling of the dice which is played with two users, whoever reaches 100 scores or more is declared a winner 
+The game is about the randomly rolling of the dice which is played with two users, whoever reaches 50 scores or more is declared a winner 
 
 
 ## SPECS
